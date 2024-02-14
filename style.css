@@ -1,0 +1,123 @@
+@media screen and (max-width: 800px) {
+hr {
+  margin: auto !important;
+}
+}
+
+hr {
+  border: 1px solid #74655E;
+  margin: auto 440px auto 0;
+}
+
+button {
+  border: 1px solid;
+  padding: 6px 11px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: medium;
+  font-family: 'basic', sans-serif;
+  margin: 4px 2px;
+  height: 31px;
+}
+
+button:hover {
+  font-size: large;
+  transition: font-size 0.5s;
+}
+
+@font-face {
+  font-family:basic;
+  src: url('https://buntsukim.neocities.org/basic.ttf'), url('basic.ttf');
+}
+
+div.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scroll-container img {
+  width: auto;
+  object-fit: contain;
+  padding: 5px;
+  height: 300px;
+}
+
+html {
+  font-family: 'basic', sans-serif;
+  color: #D2CCC0;
+  text-transform: lowercase;
+  font-size: 17px;
+}
+
+body {
+  background-color: #372E29;
+  
+  opacity: 1;
+  background-image:  radial-gradient(#52453e 0.75px, transparent 0.75px), radial-gradient(#52453e 0.75px, #372E29 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0,15px 15px;
+  
+  max-width: 900px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-bottom: 40px;
+  white-space: normal;
+}
+
+a {
+  color: #93877F;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+img {
+  max-width: 100%;
+}
+
+textarea {
+  border: 2px solid #74655E;
+  font-family: 'basic', sans-serif;
+  font-size: smaller;
+  padding: 8px;
+  color: #372E29;
+  background-color: #D2CCC0;
+}
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #74655E #372E29;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #372E29;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #74655E;
+  border-radius: 0px;
+  border: 0px none #ffffff;
+}
+
+::selection {
+  background: #74655E;
+}

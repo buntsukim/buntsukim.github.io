@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!-- steal my code or my site or anything and i will show up to your house in the night and kill you in your sleep. this is a joke, but i will notice and i will be very sad. feel free to take snippets or be inspired by it though, idc about that. -->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>the walking fish</title>
+  <link rel="icon" type="image/x-icon" href="/images/icon.png">
+</head>
+<body>
+
+<style>
+
+.countup {
+  text-align: center;
+}
+
+.countup .timeel {
+  display: inline-block;
+  padding: 0;
+  color: #918E73;
+}
+
+.countup span[class*="timeRef"] {
+  color: #918E73;
+}
+
+.icon { float:left; width:200px; border-radius:8%; margin-right:15px; margin-bottom:4px; }
+
+@media screen and (max-width: 800px) {
+.icon { display:block; float:none !important; width:150px; margin-left:auto; margin-right:auto; }
+}
+
+div.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  width: auto;
+  object-fit: contain;
+  padding: 5px;
+  height: 350px;
+}
+
+#notfound {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 2px dashed #635C4D;
+  background-color: #332927;
+  text-align: center;
+}
+
+hr.blog {
+  border: 1px solid #4B433A;
+  margin: 0 -20px 0;
+}
+
+.cw {
+  width: auto;
+  border-radius: 10px;
+  background-color: #3f3630;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px
+}
+
+textarea {
+  border: 2px solid #4B433A;
+  background-color: #332927;
+  border-radius: 10px;
+  color: #B0AEB1;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #635c4d #332927;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #332927;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #635c4d;
+  border-radius: 0px;
+  border: 0px none #ffffff;
+}
+
+* {cursor: url(https://cur.cursors-4u.net/toons/too-7/too683.cur), auto !important;}
+
+:root {
+  --width: 720px;
+  --font-main: 'Roboto', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+  --font-scale: 1em;
+  --background-color: #332927;
+  --heading-color:  #B0AEB1;
+  --text-color:  #B0AEB1;
+  --link-color: #918E73;
+  --visited-color: #635C4D;
+  --code-background-color: #f2f2f2;
+  --code-color: #222;
+  --blockquote-color: #222;
+}
+
+::selection {
+  color: #B09CB6;
+  background: #695D6D;
+}
+
+#main {
+  font-family: var(--font-main);
+  font-size: var(--font-scale);
+  margin: auto;
+  padding: 20px;
+  max-width: var(--width);
+  text-align: left;
+  background-color: var(--background-color);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  color: var(--text-color);
+  border: 2px dashed #635C4D;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+body {
+  background-image: url(/images/background.jpg);
+  background-repeat: repeat;
+  background-color: var(--background-color);
+}
+
+h3, h4, h5, h6 {
+  font-family: var(--font-main);
+  color: var(--heading-color);
+}
+
+h1, h2 {
+  font-family: var(--font-main);
+  color: var(--heading-color);
+  text-decoration: underline;
+  text-decoration-color: var(--link-color);
+}
+
+a {
+  color: var(--link-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; 
+}
+
+nav a {
+  margin-right: 8px;
+}
+
+main {
+  line-height: 1.6;
+}
+
+table {
+  width: 67%;
+  border-bottom: 1px solid #4B433A;
+}
+
+hr {
+  border: 1px solid #4B433A;
+}
+
+img {
+  max-width: 100%;
+}
+
+#etc {
+  padding: 25px 0;
+  text-align: center;
+  position: absolute;
+  float: left;
+}
+
+li::marker { color: #918E73; } 
+
+code {
+  font-family: monospace;
+  background-color: #2d2321;
+  padding: 2px;
+  border-radius: 0;
+}
+
+blockquote {
+  display: block;
+  margin-left: 15px;
+  padding-left: 10px;
+  border-left: 1px solid #635c4d;
+}
+
+</style>
+
+<div id="main">
+  
+<center><h1>welcome to my home!<img src="/images/doll.gif"></h1></center>
+<center><img src="/images/mary.gif"></center>
+
+<p>hellooo! this is my site! currently a work in progress thanks to my terrible motivation (and the fact i barely understand what im doing).. for now you can check out my <a href="#">about me</a>, the <a href="#">doug shrine</a>, <a href="#">my art</a>, and the <a href="#">clint shrine</a>!</p>
+
+<p>this site was made in firefox 1366x768, but should look perfectly fine anywhere else. <s>(i hope)</s>
+<br>always tested on mobile by my pal <a href="https://www.instagram.com/soullove1972/">barbecue</a>.</p>
+
+<center>my button if u wanna link me :D</center>
+<center><img width="88px" src="/button.png"></center>
+
+<center><details>
+<summary>code</summary>
+
+<textarea>
+<a href="https://buntsukim.neocities.org"><img width="88px" src="https://buntsukim.neocities.org/button.png"></a>
+</textarea>
+
+</details></center>
+
+<p>other cool sites :) <small>(if a links broken let me know)</small></p>
+
+<marquee behavior="alternate" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();">
+
+<a href="https://bruisedgh0st.neocities.org"><img src="https://i.postimg.cc/YS64kyqc/site-button.gif"></a>
+<a href="https://networkterminal.neocities.org/"><img src="https://i.postimg.cc/pdfvywFZ/networkterminal.gif"></a>
+<a href="https://somecaninething.neocities.org/" > <img src="https://i.postimg.cc/fRQYYdPv/gifmaker-me.gif" width="88" height="31" ></a>
+<a href="https://mypillowfort.neocities.org/"><img src="https://i.postimg.cc/rygHnVTW/005.jpg" width="88px" height="31px"></a>
+<a href="https://hatsu.neocities.org"><img src="https://i.postimg.cc/PJzTcBtJ/hatsuneocities.gif"></a>
+<a href="https://bearsmentioning.neocities.org"><img src="https://i.postimg.cc/FFqL9v5j/bearsmentioning-button-1.png"></a>
+<a href="https://epicfranb.neocities.org/"><img src="https://i.postimg.cc/Df1gD0ws/starsbutton.gif"></a>
+<a href="https://cloverbell.neocities.org/"><img src="https://i.postimg.cc/GtG8xD2q/cloverbell.gif"></a> 
+<a href="https://nineret.neocities.org/"><img style="height:31px;" src="https://i.postimg.cc/NMsPS4YK/kitty.png"></a>
+<a href="https://soupie.neocities.org/"><img src="https://i.postimg.cc/ncCGXW0F/soupiebutton.png"></a>
+<a href="https://5amgirlfriend.neocities.org/"><img src="https://i.postimg.cc/sgHsDv6H/5amgf-88x31-02.gif"></a>
+<a href="https://liliyoa.neocities.org/"><img src="https://i.imgur.com/TOPAkXH.gif" style="width:88px;height:31px;border:0"></a>
+<a href="https://huecycles.com/"><img src="https://64.media.tumblr.com/b8eff109cbbf016798b67771e6e79721/6d0f113667c22ae3-37/s1280x1920/d0ddaeb5a275f8bfea026b903fe986c5db4dad5a.gifv"></a>
+<a href="https://seafare.neocities.org/"><img src="https://i.imgur.com/WAFA65o.png"></a>
+<a href="https://vashti.neocities.org"><img src="https://64.media.tumblr.com/93803801f3677ba2d2f680c9bc68ba10/f372e05bf67d97f6-62/s100x200/b1ab640cf54921d667a0d7d831328e56feb166c6.pnj"></a>
+<a href="https://shinyexe.neocities.org"><img src="https://64.media.tumblr.com/0a0a6924a8892b8f7fc2dd691cad70b7/015fa3cd5f1dd022-87/s100x200/9569d5007d7b9691d7bd29e4dd0b6c6a088e7c70.gifv"></a>
+<a href="https://doqmeat.neocities.org"><img src="https://64.media.tumblr.com/8eba357fe04ca96e6d04c0f0fd64c35c/015fa3cd5f1dd022-1e/s100x200/09e9afdfbc78ec6cfb8a7e10e5ec237b7c5b7f16.pnj"></a>
+<a href="https://tripixel.neocities.org"><img src="https://64.media.tumblr.com/5cde1cd42d750935ddcc255711c30d0e/015fa3cd5f1dd022-5a/s100x200/5f15cd2bf2fcd81930ee8e85b0b4725ad29b2e1b.pnj"></a>
+<a href="https://meowbark2000.neocities.org"><img src="https://64.media.tumblr.com/8229f937322c4b56d66d06a3a08dc7e1/015fa3cd5f1dd022-8e/s100x200/1e63113059be1246666e0a1d8a8f406a96b388c4.pnj"></a> 
+<a href="https://sakuradreams.neocities.org/"><img src="https://64.media.tumblr.com/83d5d6b72b47fbd7ddf59e37873ef238/015fa3cd5f1dd022-15/s100x200/fd24ed28be8f266fc3d503cc20ebbca8878bdaee.gifv"></a> 
+<a href="https://pumpkin-ninja.neocities.org"><img src="https://64.media.tumblr.com/a9a83a80aee7bc599fd014f7be735645/015fa3cd5f1dd022-22/s100x200/c5a14115ee42403c8244769c64384c324f6f3462.gifv"></a>
+<a href="https://maplebear.neocities.org/"><img src="https://64.media.tumblr.com/e4cfcf03c5a9f45e8457021ddf906db1/f6d0686e030b2ac9-58/s100x200/a5d4030c3f88cfa10b8bac5b54b8e68056875d68.pnj"></a>
+<a href="https://ctrl64.neocities.org/"><img src="https://64.media.tumblr.com/1fae4f83304dcda50c94a512b1b062fe/f6d0686e030b2ac9-1a/s250x400/9164d749a52bea0fd2e052c0093bed45940754a5.jpg" height="33px"></a>
+<a href="https://nork2004.neocities.org/"><img src="https://file.garden/ZAkEYVkUN2HXHCu3/nork2004button.png"></a>
+<a href="https://jassumkiddos.neocities.org/"><img src="https://64.media.tumblr.com/73ad404221bc3b6b072ecc342f616702/f6d0686e030b2ac9-77/s100x200/e081b323ecb15133db3c99219b6c11781e67554a.gifv"></a>
+<a href="https://comfort.neocities.org"><img src="https://64.media.tumblr.com/7e6e9b6d9030a392c9fe248c4994aa4e/9594f64d816b9c9e-94/s100x200/2bb06e351525682bf448afebfac361caffc248ce.gif"></a>
+<a href="https://foolsparadise.neocities.org/"><img src="https://64.media.tumblr.com/0c104d7afffddc046426224e9e92fc51/f6d0686e030b2ac9-3a/s100x200/f0ee34b875ad1aa53210fda7fb84b06a3e9d72ed.pnj"></a>
+<a href="https://pteri.neocities.org"><img src="https://64.media.tumblr.com/4a709fc4f7e18ee022bd019238208f3e/f6d0686e030b2ac9-7c/s100x200/e9b9ec0f6b668213b5b140417a4bcc134c33e224.pnj"></a>
+<a href="https://alongcomesmary.neocities.org"><img src="https://64.media.tumblr.com/3b10c76acfbbc8cac19263e4042a53cd/0c70e37596015fa8-31/s100x200/81e8b8943484c4d9b4d9adca10257f91939e5fb6.gifv"></a>
+<a href="https://pinkvampyr.neocities.org/"><img src="https://64.media.tumblr.com/88c2b400beee88d1e49796daa69ef50c/0c70e37596015fa8-da/s100x200/21ca7c1be1fcc8db8381d3d529967d55e8c63713.gifv"></a>
+<a href="https://felinewasteland.neocities.org"><img src="https://64.media.tumblr.com/046e183d50a185dffa2423fd1fbfdd1f/0c70e37596015fa8-01/s100x200/b953f5dec54a2454cb453040832bca86758c6930.gifv"></a>
+<a href="https://goooby.neocities.org/"><img src="https://64.media.tumblr.com/52e8f9c918e0f070ed43011f73fca0be/0c70e37596015fa8-3f/s100x200/5818e1493a4b7bbe1c7f9c14436b25390a54ef47.gifv"></a>
+<a href="https://justfluffingaround.neocities.org/"><img src="https://64.media.tumblr.com/f1fe9c5141568b0cb6308b6fce89e2ec/0c70e37596015fa8-e6/s100x200/553d3a0e422e98f7043c8cd2790a6127bfef3fb1.pnj"></a>
+<a href="https://remiku.neocities.org/"><img src="https://64.media.tumblr.com/0892868fe80a23910a2baa025af96533/0c70e37596015fa8-74/s100x200/2112ce166161b5b8540602a4c7a1fa452db147a6.pnj"></a>
+<a href="https://inkcaps.neocities.org/"><img src="https://64.media.tumblr.com/46045e208fd339c469ea467b593d6116/052af542733af99e-1b/s100x200/1f041ab1ac558ca0762b1b617503f0a8f7fb48c8.gifv"></a>
+<a href="https://allyratworld.com/"><img src="https://64.media.tumblr.com/65028c8c55e8f2ba47b11d547237a4ff/052af542733af99e-54/s100x200/dcb681fc62db86fdde12c0f993d3bdb489bcfc22.pnj"></a>
+<a href="https://diluculo.neocities.org"><img src="https://64.media.tumblr.com/0883d862e28d4a2874d206f075053426/052af542733af99e-5d/s100x200/2ae81131a6f3b9cac2b6de590d4d494e366aef6e.pnj"></a>
+<a href="https://nitw.neocities.org/"><img src="https://64.media.tumblr.com/db68742d4c017b2304249ad183449274/052af542733af99e-21/s100x200/9db6d5f67ffe34d621935516b2d1f4a42d472981.gifv"></a>
+<a href="https://nickolox.neocities.org/"><img src="https://64.media.tumblr.com/2c7c0ab37d39fcb1adcc142afc966a0a/052af542733af99e-ba/s100x200/ee58bf34ef2a114ba3b8aed4c7cd1812b167fe47.gifv"></a>
+<a href="https://jeith.neocities.org/"><img src="https://64.media.tumblr.com/5839d31c8ef1bf7a6680abdce14f1cb7/052af542733af99e-9b/s100x200/e8b2109c2f8ba51ffea70f5fd9b971261d482e45.jpg"></a>
+<a href="https://nyaa.neocities.org/"><img src="https://64.media.tumblr.com/663f8977c365ec3ca03b9699aaab17f9/76cd10e290e1c835-7e/s100x200/baf0e17d3d7b4d275fd6aa5ba7b8ebfd6a831da4.gifv"></a>
+<a href="https://maia.crimew.gay"><img src="https://64.media.tumblr.com/ac9b324409b0545ac460df55e2ea8f00/76cd10e290e1c835-77/s100x200/e02de574749be096591677f95d9eb4373cc033d0.pnj"></a>
+<a href="https://lamorte.neocities.org/"><img src="https://64.media.tumblr.com/b130cb9417715c8522943c2bb3f4371c/76cd10e290e1c835-34/s100x200/1a365f27fbdab335527eae7564ff99a7cb1a3a5e.gifv"></a>
+<a href="https://leviathren.neocities.org/"><img src="https://64.media.tumblr.com/4ccceea7b2f96973039b4d1711ad9c94/76cd10e290e1c835-38/s100x200/b9385aefebb22be6ae53ff054e41661c899b1bd3.gifv"></a>
+<a href="https://lostletters.neocities.org"><img src="https://64.media.tumblr.com/e68988e72bfb8c983ada8bf25ad08b1c/76cd10e290e1c835-33/s100x200/5eb6a230d5fa7f9209df0bc12aa221cc935e9ecd.gifv"></a>
+<a href="https://soop.neocities.org"><img src="https://64.media.tumblr.com/a00aecf0f1bdf2f0645f9415c3a41210/76cd10e290e1c835-77/s100x200/12bf01d7a687ac965aa38a8dceaf61da331d6347.pnj"></a>
+<a href="https://ne0nbandit.neocities.org/"><img src="https://64.media.tumblr.com/536d742a2372a7c058ca67b2882d1c13/204b353ae3b40a66-fb/s100x200/bf5c2b1d14cfd448504e519f98a526998fc98348.pnj"></a>
+<a href="https://davemiller.neocities.org/"><img src="https://64.media.tumblr.com/a8987036a5dccfe5cb6014e5d311a99b/204b353ae3b40a66-97/s100x200/cdafc23c5aeeb07a6498b14e7cdb8eeb2ba018ef.gifv"></a>
+<a href="https://prismatic-realm.net/"><img src="https://64.media.tumblr.com/3513c65ba27b9de6a07b4e7773dfccc8/204b353ae3b40a66-7a/s100x200/c2cd4b89de518836761d0bb09dbfe96e8337925b.gifv"></a>
+<a href="https://hellokittyminigun.neocities.org/"><img src="https://64.media.tumblr.com/355bde244a43f8d4a818575ebc95883d/204b353ae3b40a66-24/s100x200/26c3b423d80f14d303f1256d3e4397e844084148.pnj"></a>
+<a href="https://rirituuu.neocities.org/"><img src="https://64.media.tumblr.com/dd1e0c94becb57f383748ae0000d9bec/204b353ae3b40a66-11/s100x200/bd2d46185c9432220a397aa555d834264d8470d2.gifv"></a>
+<a href="https://jayspace.neocities.org"><img src="https://64.media.tumblr.com/c9420c6101ae6d46eaf0d5f7c7381fb8/204b353ae3b40a66-da/s250x400/d7a39bddaae9616387b1e507b35e1536715a0b62.gifv" height="33px"></a>
+<a href="https://ghostpepper.neocities.org/"><img src="https://64.media.tumblr.com/eb7f6db1c16d5b44aa4c9599e82c480e/6324bf844f22ac46-96/s100x200/a3f36fc173c1801fe3a36c859ce6f6bec8aca796.pnj"></a>
+<a href="https://starrs.neocities.org/"><img src="https://64.media.tumblr.com/68a55e86437179e415217c5f522d84c4/6324bf844f22ac46-10/s100x200/0f99f249fcf058b0b6fdd6e2ebad3047a5154f41.gifv"></a>
+<a href="https://debtdeath.neocities.org/"><img src="https://64.media.tumblr.com/23bb39564edc8c9cfe59ce6446a84e67/6324bf844f22ac46-af/s100x200/62b7c2d83559134b04a8e6227db7faac6fa97c74.pnj"></a>
+<a href="https://olliveen.neocities.org/"><img src="https://64.media.tumblr.com/3c56eb0a03a18bc0f97ac06119adbc3e/6324bf844f22ac46-dd/s100x200/8fc0c73fc9ca7b2e9ecd7281fa3188b17104d303.gifv"></a>
+<a href="https://repth.neocities.org/"><img src="https://64.media.tumblr.com/0cb3760b2f838203d57124c32fd5298b/6324bf844f22ac46-de/s100x200/5a0939c6179fae72acb855a39f2260c160eb6781.webp"></a>
+<a href="https://dreamy.neocities.org"><img src="https://64.media.tumblr.com/577589135613e6337090530f6db88eb9/6324bf844f22ac46-fe/s100x200/e762663cfeac1c2adac51cde72f58a1c309910ca.gifv"></a>
+<a href="https://raining-starss.neocities.org"><img src="https://64.media.tumblr.com/2144d318716892f3e9cb3c9e26b3c372/e5f21a1cba81d115-06/s100x200/15845905eb4078937ce997aa481f519dd275369b.gifv"></a>
+<a href="https://gothomousspider.neocities.org/"><img src="https://64.media.tumblr.com/f3cc849a97c561cd308306d53d7fdfa3/e5f21a1cba81d115-f2/s100x200/7c6bf8d17fed8dc36996824b05376db0a01df3d1.pnj"></a>
+<a href="https://danppun.neocities.org"><img src="https://64.media.tumblr.com/1d0c9a064aed9a1c293d4c1f03fd5599/e5f21a1cba81d115-85/s100x200/51ccf9d3fe67b2a1627e865b8e038d00b363f9f2.pnj"></a>
+<a href="https://lostlove.neocities.org/"><img src="https://64.media.tumblr.com/2ffa9a7986c75e39854ba0e416dc994d/e5f21a1cba81d115-0a/s100x200/e83f1182154241fff5bf74d1709e24c340ad4603.gifv"></a>
+<a href="https://melps.neocities.org"><img src="https://64.media.tumblr.com/25ac44a0a9f768f13dcf3ec2bc5bf9ed/e5f21a1cba81d115-1f/s250x400/1b1d570eac2104932623a4f18e227c634c8aa3d6.jpg" width='88px'></a> 
+<a href="https://punchy.neocities.org/"><img src="https://64.media.tumblr.com/88bbfd7634690c8bb1eff693cfb001f1/e5f21a1cba81d115-c4/s100x200/3e918d280a49d2f754daa29a62289a619416473c.pnj"></a>
+<a href="https://dollzrevival.neocities.org/"><img src="https://64.media.tumblr.com/2e1f1d9807c2d99d1a597bbcee39766d/e5f21a1cba81d115-7e/s100x200/099f339303f82f30d5d570580953ee386318c8a3.gifv"></a>
+<a href="https://piedpipurr.ichi.city/"><img src="https://64.media.tumblr.com/2798985ea1ac809a1851b4bd69d78ba0/4e0494f4d92dca55-9e/s100x200/ac10b0903a24b3d05b8b6f41f724852e5bbc7b7b.gifv"/></a>
+<a href="https://kris-scapes.neocities.org/"><img src="https://64.media.tumblr.com/5f3dbce8ee4a282b84006ba35b9242d7/d9be7d31f3ad6dbf-60/s250x400/16d325fc7e6e39603fbda7edbdb83f233a99f543.gifv" height="33px"></a>
+ <a href="https://havemercy.neocities.org"><img src="https://64.media.tumblr.com/ca820b4323551e4e60b1429004002dbc/fcc0b40cab275a25-e3/s100x200/ea563c7bfcd8621a1169ab94e36cadd68b76b3fe.pnj"></a>
+ <a href="https://klomfel.neocities.org/"><img src="https://64.media.tumblr.com/b02a832b3a66ead56f0c9222021b42ad/9b426e3fb75b9d3c-83/s250x400/10cfe63193b89f3664d19488190e057701bf34f4.pnj" height="33px"></a>
+ <a href="https://cygnet.neocities.org"><img src="https://64.media.tumblr.com/b4210439f44c71715f2390bd566c9e5b/b6d51d52cab7629a-57/s100x200/cdbb0d2bc3086a8a85bf875c64eceb10cfa44828.pnj"></a>
+ <a href="https://mushry.neocities.org/"><img src="https://64.media.tumblr.com/afc8c3ef4e9515ea6868089cac70eb37/b6d51d52cab7629a-8f/s100x200/2c1eccd2819e393bd586c5d8069beb69c161572b.pnj"></a>
+<a href="https://crisis.city"><img src="https://64.media.tumblr.com/e252633c884e7330d7f9ba2dc8d898a3/21d27685e1bc61e2-97/s100x200/9c71a78a934bfddbe8a4058dfc15c7a99fbdd503.pnj"></a>
+<a href="https://monchhichi.neocities.org"><img src="https://64.media.tumblr.com/da3fa5ad1c57ca2c8206cde53e851932/db53c54a3ddc8372-4c/s100x200/58cf1db32e100d56a53ff553249ac1328e3ab16d.pnj"></a>
+
+</marquee>
+
+<div id="etc">
+<details><summary>cliques/fanlistings!</summary>
+
+<a href="http://aromatic.wings.nu/">aromatic</a> // cappuccino
+<br>
+
+<a href="https://cliqued.wings.nu/">unexpected song</a>
+<a href="https://cliqued.wings.nu/"><img src="https://i.postimg.cc/xdgMrL7b/tumblr-19a9b67996d259c1e43b69d237d6c2c3-6bd04766-75.png"></a> doug houser
+<br>
+
+<a href="https://dust.kuchiki.net/"><img src="https://i.postimg.cc/Kvgz7tDD/tumblr-eb83b9370d3cf30a1f3d9bb89c3c7bd8-5432d988-100.webp" title="catastic!!"></a>
+<br>
+
+<a href="https://www.mabsland.com/Adoption.html"><img src="https://i.postimg.cc/XqDnK9x7/Censor-14b.gif"></a><br><br>
+
+<a href="https://residentevils.net/"><img src="https://i.postimg.cc/LX67RBsd/tumblr-013672d159e2abcbafe9aa14a135d350-c712e476-75.jpg"></a>
+<a href="https://herotovillain.com/batman/index.php"><img src="https://i.postimg.cc/MTvCVmJ7/tumblr-25ceca74bbbff227c0e7bef0d22be229-ad56409b-75.jpg"></a>
+<a href="https://fan.glast-heim.net/sh2/"><img src="https://i.postimg.cc/L5vjSLhW/tumblr-4866069a1784082ff821ae5993b964e2-515b071e-75.jpg"></a>
+<a href="https://fan.surlybutterfly.net/stardewvalley"><img src="https://i.postimg.cc/tT3hrLbp/tumblr-586207f09448fbc294135ea4b8c8955d-22f2c73f-75.jpg"></a>
+<a href="http://heather.prisonic-fairytale.com/heather.php"><img src="https://i.postimg.cc/vTG5C389/tumblr-16baf5a0d81a80fda1880c8281e49a03-8e4d24ba-75.jpg"></a>
+<a href="http://maria.prisonic-fairytale.com/"><img src="https://i.postimg.cc/4dk6QXrW/tumblr-784cf00049063f3003784680b6e0c475-9d144dcd-75.jpg"></a>
+<a href="https://silent.am/pyramid"><img src="https://i.postimg.cc/mrF39P6c/tumblr-8c54d876153bd3dbc4e3c5574f4fc58a-dca57a17-75.jpg"></a>
+<a href="http://fan.warmer-climate.net/portal2"><img src="https://i.postimg.cc/Bt9DLjh9/portal2.png"></a>
+
+</details>
+ </div>
+ 
+</div>
+</body></html>
